@@ -82,7 +82,7 @@ const Hero = () => {
       </div>
 
       <div className="container-custom relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center ">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -94,7 +94,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 lg:mb-6"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 lg:mb-6 sm:mt-8"
             >
               <span className="text-white drop-shadow-lg">Backend</span>
               <br />
@@ -454,11 +454,11 @@ const Hero = () => {
               </div>
               
               {/* Name and Title with Enhanced Styling */}
-              <motion.div // make this div in the center mobile  sm 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="absolute -bottom-24 sm:-bottom-28  left-1/8 transform -translate-x-1/2 text-center w-full px-4 flex flex-col items-center"
+                className="absolute -bottom-18 sm:-bottom-30 xs:-bottom-20  left-1/8 transform -translate-x-1/2 text-center w-full px-4 flex flex-col items-center"
               >
                 <h3 className="text-white text-lg sm:text-xl lg:text-2xl font-bold mb-2 drop-shadow-lg text-center w-full">
                   Mostafa Elgazar
