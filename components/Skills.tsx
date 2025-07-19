@@ -84,7 +84,7 @@ const Skills = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {skillCategories.map((category, index) => (
             <motion.div
               key={category.title}
@@ -131,7 +131,7 @@ const Skills = () => {
           className="mt-16"
         >
           <h3 className="text-2xl font-bold text-center mb-8">Additional Skills</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 lg:gap-4">
             {[
               'Git', 'Swagger', 'Docker', 'Agile', 'Scrum', 'TDD',
               'React.js', 'Redux', 'Bootstrap', 'HTML', 'CSS', 'JavaScript',

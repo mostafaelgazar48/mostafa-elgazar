@@ -52,7 +52,7 @@ const Header = () => {
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
-            <span className="text-white font-oswald font-semibold text-xl">
+            <span className="text-white font-oswald font-semibold text-lg sm:text-xl">
               Mostafa Nabil Elgazar
             </span>
           </div>
@@ -81,13 +81,14 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-black/95 backdrop-blur-sm border-t border-gray-800">
+          <div className="md:hidden bg-black/95 backdrop-blur-sm border-t border-gray-800 animate-in slide-in-from-top-2">
             <nav className="flex flex-col py-4">
-              {navItems.map((item) => (
+              {navItems.map((item, index) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-white hover:text-gray-300 transition-colors duration-300 font-medium py-3 px-4 text-left"
+                  className="text-white hover:text-gray-300 transition-colors duration-300 font-medium py-3 px-6 text-left hover:bg-gray-800/50"
+                  style={{ animationDelay: `${index * 100}ms` }}
                 >
                   {item.name}
                 </button>

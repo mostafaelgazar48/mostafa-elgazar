@@ -109,12 +109,12 @@ const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex flex-wrap justify-center gap-4 mb-12"
+          className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8 sm:mb-12"
         >
           {categories.map((category, index) => (
             <button
               key={category}
-              className="bg-primary-dark text-text px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary hover:text-background"
+              className="bg-primary-dark text-text px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-medium transition-all duration-300 hover:bg-primary hover:text-background text-sm sm:text-base"
             >
               {category}
             </button>
@@ -122,7 +122,7 @@ const Projects = () => {
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}

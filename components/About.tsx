@@ -52,7 +52,7 @@ const About = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           {/* Left Column - Personal Info */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -62,9 +62,9 @@ const About = () => {
             className="space-y-8"
           >
             {/* Profile Section */}
-            <div className="bg-gray-800 rounded-2xl p-8">
-              <div className="flex items-center space-x-4 mb-6">
-                <div className="w-20 h-20 bg-gray-600 rounded-full flex items-center justify-center overflow-hidden">
+            <div className="bg-gray-800 rounded-2xl p-6 sm:p-8">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gray-600 rounded-full flex items-center justify-center overflow-hidden">
                   <Image
                     src="/me.jpeg"
                     alt="Mostafa Elgazar"
@@ -73,9 +73,9 @@ const About = () => {
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
-                <div>
-                  <h3 className="text-white text-2xl font-bold">Mostafa Nabil Elgazar</h3>
-                  <p className="text-gray-300 text-lg">Senior Backend Developer</p>
+                <div className="text-center sm:text-left">
+                  <h3 className="text-white text-xl sm:text-2xl font-bold">Mostafa Nabil Elgazar</h3>
+                  <p className="text-gray-300 text-base sm:text-lg">Senior Backend Developer</p>
                 </div>
               </div>
 
@@ -121,12 +121,12 @@ const About = () => {
               </div>
 
               {/* Social Links */}
-              <div className="flex space-x-4 mt-6">
-                <button className="btn-primary">Hire Me</button>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6">
+                <button className="btn-primary text-sm sm:text-base py-2 sm:py-3">Hire Me</button>
                 <a 
                   href="/mostafa-elgazar.pdf"
                   download="Mostafa-Elgazar-CV.pdf"
-                  className="btn-secondary cursor-pointer"
+                  className="btn-secondary cursor-pointer text-sm sm:text-base py-2 sm:py-3"
                 >
                   Download CV
                 </a>
